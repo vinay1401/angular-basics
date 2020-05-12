@@ -1,0 +1,7 @@
+<p>{{stringText}}</p>
+<p>Attribute binding</p>
+<button class="btn btn-primary" [disabled] = "btnDisabled" >Add Record</button>
+<input type="text" name="input1" (input) = "onInput($event)" class="form-control text-input mx-col4">
+<p>{{inputVal}}</p>
+<input type="text" name="input2" [(ngModel)] = "inputVal" class="form-control text-input mx-col4">
+<p>{{inputVal}}</p>

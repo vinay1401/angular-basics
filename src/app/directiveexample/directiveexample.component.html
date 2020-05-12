@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)] = "textVal">
+<p *ngIf="textVal === ' '; else textEntered">No text entered</p>
+<ng-template #textEntered>
+    <p [ngStyle] = "{backgroundColor: 'red'}" [ngClass]="{textcolor: textInput == 'Vinay'}">{{textVal}} entered</p>
+</ng-template>
+<input type="text" name="input2" [(ngModel)] = "textInput" class="form-control text-input mx-col4">
